@@ -18,7 +18,7 @@ Game.prototype.addAsteroids = function() {
 
   while (i > 0) {
     // debugger;
-    asteroids.push(new Asteroid({pos: this.randomPosition(), game: this}));
+    asteroids.push(new Asteroid({pos: this.randomPosition()}));
     //Asteroids({pos: [x,y], game: this?})
     i--;
   }
@@ -42,14 +42,14 @@ Game.prototype.moveObjects = function() {
   asteroids.forEach(asteroid => asteroid.move());
 }
 
-Game.prototype.wrap = function(coord, max) {
-  if (coord < 0) {
-    return max - (coord % max);
-  } else if (coord > max) {
-    return coord % max;
-  } else {
-    return coord;
-  }
-}
+// Game.prototype.wrap = function(coord, max) {
+//   if (coord < 0) {
+//     return max - (coord % max);
+//   } else if (coord > max) {
+//     return coord % max;
+//   } else {
+//     return coord;
+//   }
+// }
 
 module.exports = Game;

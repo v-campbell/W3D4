@@ -28,11 +28,11 @@ MovingObject.prototype.move = function () {
   this.pos[0] += this.vel[0];
   this.pos[1] += this.vel[1];
 
-  if (this.pos[0] < 0 || this.pos[0] > this.game.DIM_X) {
-    this.pos[0] = this.game.wrap(this.pos[0], this.game.DIM_X);
-  } else if (this.pos[1] < 0 || this.pos[1] > this.game.Game.DIM_Y) {
-    this.pos[1] = this.game.wrap(this.pos[1], this.game.Game.DIM_Y);
-  }
+  // if (this.pos[0] < 0 || this.pos[0] > this.game.DIM_X) {
+  //   this.pos[0] = this.game.wrap(this.pos[0], this.game.DIM_X);
+  // } else if (this.pos[1] < 0 || this.pos[1] > this.game.Game.DIM_Y) {
+  //   this.pos[1] = this.game.wrap(this.pos[1], this.game.Game.DIM_Y);
+  // }
 };
 
 module.exports = MovingObject;
