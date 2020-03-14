@@ -53,7 +53,7 @@ class TodoForm extends React.Component {
             <input type="text" onChange={this.updateBody} value={this.state.body}/>
           </label>
           <br/>
-          <input type="submit" value="Create!!!!"/>
+          <input type="submit" value="Add To-Do"/>
 
         </form>
 

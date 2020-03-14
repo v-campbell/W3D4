@@ -13,11 +13,10 @@ const TodoList = (props) => {
 
   return (
     <div>
-      <h3>Todo List goes here! :)</h3>
-      <TodoForm receiveTodo={props.receiveTodo}/>
       <ul>
         {todoList}
       </ul>
+      <TodoForm receiveTodo={props.receiveTodo}/>
     </div>
   );
 }
